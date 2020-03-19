@@ -1,0 +1,13 @@
+.curseclient
+BotaniaVars.dat
+crafttweaker.log
+minecraftinstance.json
+options.txt
+usercache.json
+usernamecache.json
+crash-reports/
+journeymap/
+local/
+logs/
+saves/
+screenshots/
