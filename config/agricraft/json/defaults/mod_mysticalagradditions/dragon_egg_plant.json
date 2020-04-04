@@ -1,12 +1,12 @@
 {
-  "path": "mod_mysticalagradditions/nether_star_plant.json",
+  "path": "mod_mysticalagradditions/dragon_egg_plant.json",
   "enabled": true,
-  "id": "mysticalagradditions:nether_star_plant",
-  "plant_name": "Nether Star Crop",
-  "seed_name": "Nether Star Seeds",
+  "id": "dragon_egg_plant",
+  "plant_name": "Dragon Egg Crop",
+  "seed_name": "Dragon Egg Seeds",
   "seed_items": [
     {
-      "item": "mysticalagradditions:nether_star_seeds",
+      "item": "mysticalagradditions:dragon_egg_seeds",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Nether Star Seeds."
+    "default": "Dragon Egg Seeds."
   },
   "growth_chance": 0.85,
   "growth_bonus": 0.02,
@@ -38,7 +38,7 @@
         "max": 5,
         "chance": 0.9,
         "required": true,
-        "item": "mysticalagradditions:nether_star_essence",
+        "item": "mysticalagradditions:dragon_egg_essence",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -63,7 +63,7 @@
         "max_y": -2,
         "max_z": 0,
         "item": "mysticalagradditions:special",
-        "meta": 0,
+        "meta": 1,
         "tags": "",
         "ignoreMeta": false,
         "ignoreTags": [],
@@ -73,7 +73,7 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "mysticalagradditions:items/nether_star_seeds",
+    "seed_texture": "mysticalagradditions:items/dragon_egg_seeds",
     "plant_textures": [
       "mysticalagriculture:blocks/crop0",
       "mysticalagriculture:blocks/crop1",
@@ -82,7 +82,7 @@
       "mysticalagriculture:blocks/crop3",
       "mysticalagriculture:blocks/crop4",
       "mysticalagriculture:blocks/crop4",
-      "mysticalagradditions:blocks/nether_star_crop"
+      "mysticalagradditions:blocks/dragon_egg_crop"
     ]
   }
 }
