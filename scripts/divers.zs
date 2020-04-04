@@ -92,8 +92,9 @@ global enderStar as IItemStack= <extendedcrafting:material:40>;
 global extendedCatalist as IItemStack[] = [basicCatalist, advancedCatalist, eliteCatalist, ultimateCatalist, crystaltineCatalist, theUltimateCatalist];
 
 //mystical
-global tierCraftingSeed as IItemStack[] = [<mysticalagriculture:crafting:17>, <mysticalagriculture:crafting:18>, <mysticalagriculture:crafting:19>, <mysticalagriculture:crafting:20>, <mysticalagriculture:crafting:21>];
-global tierCraftingIngot as IItemStack[] = [<mysticalagriculture:crafting:33>, <mysticalagriculture:crafting:34>, <mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:37>];
+global tierCraftingPowder as IItemStack[] = [<mysticalagriculture:crafting:0>, <mysticalagriculture:crafting:1>, <mysticalagriculture:crafting:2>, <mysticalagriculture:crafting:3>, <mysticalagriculture:crafting:4>];
+global tierCraftingSeed as IItemStack[] = [<mysticalagriculture:crafting:16>, <mysticalagriculture:crafting:17>, <mysticalagriculture:crafting:18>, <mysticalagriculture:crafting:19>, <mysticalagriculture:crafting:20>, <mysticalagriculture:crafting:21>];
+global tierCraftingIngot as IItemStack[] = [<mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:33>, <mysticalagriculture:crafting:34>, <mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:37>];
 
 //nuclearcraft
 global basicPlate as IItemStack= <nuclearcraft:part:0>;

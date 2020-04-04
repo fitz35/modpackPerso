@@ -1,19 +1,33 @@
 #priority 201
 import crafttweaker.item.IItemStack;
-import crafttweaker.recipes.ICraftingRecipe;
-import crafttweaker.item.IIngredient;
-/////disable crafting seed and make the craft into botania altar with coponent
-for i, item in tierCraftingSeed{
-	var recipe as IIngredient[]= recipes.getRecipesFor(item)[0].ingredients1D;
-	recipe += extendedCatalist[i];
-	mods.botania.RuneAltar.addRecipe(item, recipe, (i + 1) * 1000);
-	recipes.remove(item);
+
+/////disable crafting seed and ingot
+//ingot
+for i in 17 to 22{
+	recipes.removeByRecipeName("mysticalagriculture:crafting_" + i);
 }
 
-//same for the ingot :
-for i, item in tierCraftingIngot{
-	var recipe as IIngredient[]= recipes.getRecipesFor(item)[0].ingredients1D;
-	recipe += extendedCatalist[i];
-	mods.botania.RuneAltar.addRecipe(item, recipe, (i + 1) * 1000);
-	recipes.remove(item);
+//seed
+for i in 8 to 13{
+	recipes.removeByRecipeName("mysticalagriculture:crafting_" + i);
 }
+
+
+
+//ajout des craft
+for i, item in tierCraftingSeed{
+	if(i != 0){
+		//seed
+		recipes.addShaped("CT_mystical_seed_tier" + i, item, 
+		[[tierCraftingPowder[i - 1], extendedCatalist[i - 1], tierCraftingPowder[i - 1]], 
+		[null, tierCraftingSeed[i - 1], null], 
+		[tierCraftingPowder[i - 1], null, tierCraftingPowder[i - 1]]]);
+		
+		//ingot
+		recipes.addShaped("CT_mystical_ingot_tier" + i, tierCraftingIngot[i], 
+		[[tierCraftingIngot[i - 1], tierCraftingPowder[i - 1], null], 
+		[tierCraftingPowder[i - 1], extendedCatalist[i - 1], null], 
+		[null, null, null]]);
+	}
+}
+
