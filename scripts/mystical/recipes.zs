@@ -1,8 +1,8 @@
 #priority 201
 import crafttweaker.item.IItemStack;
 
-mods.jei.JEI.removeAndHide(<mysticalagridditions:neutronium_seeds>);
-mods.jei.JEI.removeAndHide(<mysticalagridditions:neutronium_essence>);
+mods.jei.JEI.removeAndHide(<mysticalagradditions:neutronium_seeds>);
+mods.jei.JEI.removeAndHide(<mysticalagradditions:neutronium_essence>);
 
 /////disable crafting seed and ingot
 //ingot
